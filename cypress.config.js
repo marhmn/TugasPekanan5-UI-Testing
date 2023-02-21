@@ -1,11 +1,11 @@
 const { defineConfig } = require('cypress')
 
 module.exports = defineConfig({
-    pageLoadTimeout: 60000,
+    
     e2e: {
-
+        pageLoadTimeout: 120000,
         baseUrl : 'https://kasirdemo.belajarqa.com/',
-        specPattern : "cypress/support/e2e",
+        specPattern : "cypress/support/e2e/",
         supportFile : false,
     },
     env:{
