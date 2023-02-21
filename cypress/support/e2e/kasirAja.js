@@ -158,7 +158,7 @@ describe('Edit Kategori', () => {
     cy.contains('success').should('be.visible')
 })
 
-it('Edit Kategori berhasil ', () => {
+it('Edit Kategori gagal ', () => {
   cy.visit('https://kasirdemo.belajarqa.com/')
 
   cy.get('#email').type('m.a.rahman0505@gmail.com')
