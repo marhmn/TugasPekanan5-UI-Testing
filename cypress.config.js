@@ -1,7 +1,7 @@
 const { defineConfig } = require('cypress')
 
 module.exports = defineConfig({
-    videoCompression: false,
+    pageLoadTimeout: 60000,
     e2e: {
 
         baseUrl : 'https://kasirdemo.belajarqa.com/',

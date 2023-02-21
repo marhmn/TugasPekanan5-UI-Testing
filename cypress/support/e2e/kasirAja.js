@@ -8,7 +8,6 @@ describe('Login', () => {
         cy.get('.chakra-button').click()
 
         cy.contains('Kredensial yang Anda berikan salah').should('be.visible')
-        cy.wait(1000)
       })
     
     it('sukses melakukan login', () => {
@@ -23,7 +22,6 @@ describe('Login', () => {
 
       // Periksa apakah elemen 'kasirAja' ada di halaman
       cy.contains('kasirAja').should('be.visible')
-
     })
 
     
@@ -42,31 +40,31 @@ describe('klik semua menu yang ada di dashboard', () => {
         
       // Klik pada menu 'Laporan Penjualan'
       cy.contains('penjualan').click()
-
+      cy.wait(2000)
       // Periksa apakah URL mengandung '/penjualan'
       cy.url().should('include', '/sales')
-
+      cy.wait(2000)
       // Klik pada menu 'Barang'
       cy.contains('pembelian').click()
-
+      cy.wait(2000)
       // Periksa apakah URL mengandung '/barang'
       cy.url().should('include', '/purchases')
-
+      cy.wait(2000)
       // Klik pada menu 'Kategori'
       cy.contains('produk').click()
-
+      cy.wait(2000)
       // Periksa apakah URL mengandung '/kategori'
       cy.url().should('include', '/products')    
-
+      cy.wait(2000)
       // Klik pada menu 'Kategori'
       cy.contains('pengguna').click()
-
+      cy.wait(2000)
       // Periksa apakah URL mengandung '/kategori'
       cy.url().should('include', '/users')    
-
+      cy.wait(2000)
       // Klik pada menu 'Kategori'
       cy.contains('pelanggan').click()
-
+      cy.wait(2000)
       // Periksa apakah URL mengandung '/kategori'
       cy.url().should('include', '/customers')    
 
