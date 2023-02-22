@@ -2,7 +2,7 @@
   "name": "tugaspekanan5-ui-testing",
   "version": "1.0.0",
   "description": "soal nomor 1 link Test Scenario: \r https://docs.google.com/spreadsheets/d/1rclOvGfnOC3NpQkcAgrv5A0L7NlPFEfAY4aqVmltYOY/edit?usp=sharing",
-  "main": "index.js",
+  "main": "cypress.config.js",
   "scripts": {
     "test": "npx cypress run"
   },
@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/marhmn/TugasPekanan5-UI-Testing#readme",
   "devDependencies": {
-    "cypress": "^12.6.0"
+    "cypress": "^10.6.0"
   }
 }
